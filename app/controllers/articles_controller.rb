@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  # READ
   def index
     @articles = Article.all
   end
@@ -7,6 +8,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  # CREATE
   def new
     @article = Article.new
   end
@@ -21,6 +23,23 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # UPDATE
+  def edit
+    @article = Article.find(params[:id])
+  end
+  
+  def update
+    @article = Article.find(params[:id])
+
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+  # DELETE
+
+  # PARAMS
   private
     def article_params
       params.require(:article).permit(:title, :body)
