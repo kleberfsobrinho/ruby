@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
-  
+
   def update
     @article = Article.find(params[:id])
 
@@ -37,7 +37,7 @@ class ArticlesController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
   end
-  
+
   # DELETE
   def destroy
     @article = Article.find(params[:id])
@@ -49,6 +49,6 @@ class ArticlesController < ApplicationController
   # PARAMS
   private
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :status)
     end
 end
