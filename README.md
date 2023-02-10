@@ -11,7 +11,7 @@
     $ gem install rails
     ```
     ```bash
-    $ rails --version$ gem install rails    
+    $ rails --version   
     ```
     
 - Criando o App
