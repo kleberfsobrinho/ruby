@@ -1,24 +1,34 @@
-# README
+*v7.0.4.2*
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Instalação
+    
+    [Ruby](https://rubyinstaller.org/downloads/)
+    
+    [SQLite3](https://www.sqlite.org/download.html) ([Instalação Alura](https://www.alura.com.br/artigos/sqlite-da-instalacao-ate-primeira-tabela?gclid=CjwKCAiArY2fBhB9EiwAWqHK6ow0aigsruEFZ2TH5cJc-BU8ruva8eH9Zuq6eAhPwXcvdeBSOwX0CBoCC2UQAvD_BwE))
+    
+    Para instalar o Rails:
+    ```bash
+    $ gem install rails
+    ```
+    ```bash
+    $ rails --version$ gem install rails    
+    ```
+    
+- Criando o App
+    
+    ```bash
+    $ rails new <app_name>
+    ```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Hello, ***Rails** !*
+    - Iniciando o Servidor Web
+        ```bash
+        $ bin/rails server
+        ```
+        
+        No windows:
+        ```bash
+        $ ruby bin/rails server
+        ```
+        
+        Isso iniciará o Puma, um servidor web distribuído com Rails por padrão. Para abrir a aplicação [link](http://localhost:3000/)
