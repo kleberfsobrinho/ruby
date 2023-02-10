@@ -13,12 +13,6 @@
     ```bash
     $ rails --version   
     ```
-    
-- Criando o App
-    
-    ```bash
-    $ rails new <app_name>
-    ```
 
 - Hello, ***Rails** !*
     - Iniciando o Servidor Web
